@@ -1,5 +1,5 @@
 const userRoute = require('express').Router();
-const { getAllUser, updateUser, deleteUser } = require('../controllers/userController');
+const { getAllUser, updateUser } = require('../controllers/userController');
 const { authMiddleware } = require('../middleware/auth');
 
 userRoute.get("/all", authMiddleware, getAllUser);
